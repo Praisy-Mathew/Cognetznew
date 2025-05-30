@@ -318,7 +318,7 @@
                                 <br>
                                 <div class="about-button">
                                     <div class="main-button wow fadeInUp" data-wow-delay=".3s">
-                                        <a href="about.html"> <span class="theme-btn">Current Openings </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
+                                        <a href="#opening"> <span class="theme-btn">Current Openings </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
                                     </div>
                                     
                                 </div>
@@ -489,7 +489,7 @@
         </section>
 
         <!-- Team Section Start -->
-        <section class="team-section-33 section-padding">
+        <section class="team-section-33 section-padding" id="opening">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-12">
@@ -515,7 +515,7 @@
                         <div class="swiper team-slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-    <div class="team-card-items mt-0" style="height: 750px;">
+    <div class="team-card-items mt-0"  id="teamCard" >
         <div class="team-content text-center">
             <h3 style="font-size: xx-large; color: rgb(34, 34, 190);">Operations Manager</h3>
             <br>
@@ -547,7 +547,7 @@
     </div>
 </div>
  <div class="swiper-slide">
-    <div class="team-card-items mt-0" style="height: 750px;">
+    <div class="team-card-items mt-0"  id="teamCard" >
         <div class="team-content text-center">
             <h3 style="font-size: xx-large; color: rgb(34, 34, 190) ">Business Development Executive</h3>
             <br>
@@ -735,7 +735,26 @@
                 </a>
             </div>
         </section>  
-        
+        <script>
+    function adjustTeamCardHeight() {
+        const card = document.getElementById("teamCard");
+        if (window.innerWidth <= 768) {
+            // Mobile view
+            card.style.height = "1000px";
+        } else if (window.innerWidth <= 1200) {
+            // Tablet / Small Laptop
+            card.style.height = "400px";
+        } else {
+            // Desktop/Laptop
+            card.style.height = "500px";
+        }
+    }
+
+    // Run on load and resize
+    window.addEventListener("load", adjustTeamCardHeight);
+    window.addEventListener("resize", adjustTeamCardHeight);
+</script>
+
         <!--<< All JS Plugins >>-->
         <script src="assets/js/jquery-3.7.1.min.js"></script>
         <!--<< Viewport Js >>-->
