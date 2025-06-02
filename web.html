@@ -120,7 +120,15 @@
                                         <i class="fal fa-map-marker-alt"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                        <a target="_blank" href="#">Muwaileh Commercial -Industrial Area -Sharjah -United Arab Emirates</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#"> Cognetz ds 4 fourth floor, hevenly plaza ,vazhakala, kochi</a>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
@@ -167,10 +175,10 @@
         <div class="offcanvas__overlay"></div>
 
         <!-- Header Section Start -->
-        <header id="header-sticky" class="header-1">
+        <header id="header-sticky" class="header-1" style="color: black !important;">
             <div class="container-fluid">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
+                <div class="mega-menu-wrapper" style="color: black !important;">
+                    <div class="header-main" style="color: black !important;">
                         <div class="logo">
                             <a href="index.html" class="header-logo">
                                 <img src="assets/img/logo.png" alt="logo-img" style="height: 50px;">
@@ -179,8 +187,8 @@
                                 <img src="assets/img/logo.png" alt="logo-img" style="height: 50px;">
                             </a>
                         </div>
-                        <div class="mean__menu-wrapper">
-                            <div class="main-menu">
+                        <div class="mean__menu-wrapper" style="color: black;">
+                            <div class="main-menu" style="color: black;">
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li class="has-dropdown active menu-thumb">
@@ -250,7 +258,26 @@
                 </div>
             </div>
         </header>
-<div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/web-development.jpg');height: 550px;">
+<style>
+    /* Target all header menu links */
+#header-sticky .main-menu ul li a,
+#header-sticky .main-menu ul li a:hover,
+#header-sticky .main-menu ul li a:focus {
+    color: black !important;
+}
+
+/* Submenu items */
+#header-sticky .submenu li a {
+    color: black !important;
+}
+
+/* Dropdown arrows if needed */
+#header-sticky .main-menu ul li a i {
+    color: black !important;
+}
+
+</style>
+<div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/web-development.jpg');margin-top: 100px; height: 450px;">
             <div class="left-shape">
                 <img src="assets/img/breadcrumb-shape.png" alt="img">
             </div>
@@ -266,7 +293,22 @@
                 </div>
             </div>
         </div>
+<style>
+    .square-image-container {
+      width: 100%;
+      max-width: 270px;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 8px;
+    }
 
+    .square-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
         <!-- News Section Start -->
         <section class="news-section section-padding fix">
             <div class="breadcrumb-sub-title">
@@ -364,58 +406,80 @@
         </div>
             <div class="container">
                 <div class="row g-4">
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="height: 350px;">
-                        <div class="service-box-items mt-0" style="height: 350px;">
-                            <div class="icon">
-                                <img src="assets/img/1.webp" alt="img" style="height: 70px;">
-                            </div>
-                            <div class="content"> 
-                                <h4><a>Project Planning</a></h4>
-                                <p>We start by understanding your objectives and goals, conducting brand assessments, and analyzing your competitors to create a tailored plan for your web development project.</p>
-                               
-                            </div>
-                        </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="height: 250px;">
+                        <div class="service-box-items mt-0" style="height: 250px;">
+                            <div class="icon-content">
+                              <div class="content">
+                               <h4 style="display: flex; align-items: center; gap: 10px;">
+                                <img src="assets/img/1.webp" alt="Project Planning Icon" style="height: 50px;">
+                                   <a>Project Planning</a>
+                                </h4>
+                            <p style="font-size: 18px;">We start by understanding your objectives and goals, conducting brand assessments, and analyzing your competitors to create a tailored plan for your web development project.</p>
+                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="height: 350px;">
-                        <div class="service-box-items mt-0" style="height: 350px;">
-                            <div class="icon">
-                                <img src="assets/img/2.webp" alt="img" style="height: 70px;">
-                            </div>
-                            <div class="content"> 
-                                <h4><a>Design</a></h4>
-                                <p>Our team will design the features and structure of your website, incorporating your feedback and suggestions to ensure that the final product meets your expectations.</p>
-                               
-                            </div>
-                        </div>
+
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="height: 350px;">
-                        <div class="service-box-items mt-0" style="height: 350px;">
-                            <div class="icon">
-                                <img src="assets/img/3.webp" alt="img" style="height: 70px;">
-                            </div>
-                            <div class="content"> 
-                                <h4><a>Development</a></h4>
-                                <p>Once the design is finalized, our team will begin the development process, building your website with precision and attention to detail.</p>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="height: 350px;">
-                        <div class="service-box-items mt-0" style="height: 350px;">
-                            <div class="icon">
-                                <img src="assets/img/4.webp" alt="img" style="height: 70px;">
-                            </div>
-                            <div class="content"> 
-                                <h4><a>Launch</a></h4>
-                                <p>Finally, we'll launch your website on the agreed-upon date, promoting it widely to enhance reach and customer engagement.</p>
-                               
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="height: 250px;">
+        <div class="service-box-items mt-0" style="height: 250px;">
+            <div class="icon-content">
+                <div class="content">
+                    <h4 style="display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/img/2.webp" alt="Design Icon" style="height: 50px;">
+                        <a>Design</a>
+                    </h4>
+                    <p style="font-size: 18px;">
+                        Our team will design the features and structure of your website, incorporating your feedback and suggestions to ensure that the final product meets your expectations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Development -->
+    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="height: 250px;">
+        <div class="service-box-items mt-0" style="height: 250px;">
+            <div class="icon-content">
+                <div class="content">
+                    <h4 style="display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/img/3.webp" alt="Development Icon" style="height: 50px;">
+                        <a>Development</a>
+                    </h4>
+                    <p style="font-size: 18px;">
+                        Once the design is finalized, our team will begin the development process, building your website with precision and attention to detail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Launch -->
+    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="height: 270px;">
+        <div class="service-box-items mt-0" style="height: 250px;">
+            <div class="icon-content">
+                <div class="content">
+                    <h4 style="display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/img/4.webp" alt="Launch Icon" style="height: 50px;">
+                        <a>Launch</a>
+                    </h4>
+                    <p style="font-size: 18px;">
+                        Finally, we'll launch your website on the agreed-upon date, promoting it widely to enhance reach and customer engagement.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
                 </div>
             </div>
         </section>
-<section class="case-studies-section-4 fix section-padding" style="background: #f8f9fa;">
+ <style>
+@media (max-width: 767px) {
+  .case-studies-card-items {
+    width: 100% !important;
+  }
+}
+</style>
+<section id="autoScrollContainer" class="case-studies-section-4 fix section-padding" style="background: #f8f9fa; overflow: hidden;">
     <div class="container">
         <!-- Section Heading -->
         <div class="section-title mb-4 text-center">
@@ -423,9 +487,9 @@
             <p>Explore our web development works to see how we turn ideas into powerful, pixel-perfect digital experiences.</p>
         </div>
 
-        <!-- Horizontal Scrollable Cards (2 at a time) -->
-        <div class="scroll-wrapper d-flex overflow-auto gap-4 px-2" style="scroll-snap-type: x mandatory;">
-            <!-- Card 1 -->
+        <!-- Scrollable Cards -->
+        <div id="scrollWrapper" class="scroll-wrapper d-flex gap-4 px-2"
+           style="scroll-snap-type: x mandatory; overflow-y: hidden; overscroll-behavior-y: contain; overscroll-behavior-x: auto;">
             <div class="case-studies-card-items flex-shrink-0" style="width: 48%; scroll-snap-align: start;">
                 <div class="thumb">
                     <img src="assets/img/abba printing.png" alt="img" class="img-fluid rounded">
@@ -539,14 +603,33 @@
                     <a href="https://eduriz.com/" class="icon" target="_blank"><i class="fa-regular fa-arrow-up-right"></i></a>
                 </div>
             </div>
-            <!-- Add more cards as needed -->
+            
         </div>
     </div>
 </section>
+       
+ 
+<section class="cta-section section-bg section-padding">
+  <div class="container">
+    <div class="cta-wrapper bg-cover text-center"
+         style="background-image: url('assets/img/cta-bg.jpg'); padding: 40px; border-radius: 10px; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      
+    
+      <h3 style="margin-bottom: 20px; color: white;" >Let us help you grow your business with expert web development services.</h3>
+      
+      <a href="contact.html" class="btn btn-primary"
+         style="background-color: #411edf; padding: 12px 30px; border-radius: 30px; text-decoration: none; color: white;">
+        Contact Us
+      </a>
+      
+    </div>
+  </div>
+</section>
+
 
 
 <!-- Footer Section Start -->
-      <section class="footer-section footer-bg fix">
+ <section class="footer-section footer-bg fix">
             <div class="container">
                 <div class="footer-widgets-wrapper">
                     <div class="row">
@@ -661,9 +744,13 @@
                                     <ul class="contact-info">
                                         <li>
     <i class="fa-solid fa-location-dot"></i>
-    <span style="color: #ddd;">123 Health Street, New Delhi, India</span>
+    <span style="color: #ddd;">Muwaileh Commercial -Industrial
+Area -Sharjah -United Arab Emirates</span>
 </li>
-
+ <li>
+    <i class="fa-solid fa-location-dot"></i>
+    <span style="color: #ddd;">Cognetz ds 4 fourth floor, hevenly plaza ,vazhakala, kochi</span>
+</li>
                                         <li>
                                             <i class="fa-regular fa-envelope"></i>
                                             <a href="mailto:info@cognetz.com">info@cognetz.com</a>
@@ -691,9 +778,44 @@
                     <i class="far fa-arrow-up"></i>
                 </a>
             </div>
-        </section>  
-        
+        </section>      
         <!--<< All JS Plugins >>-->
+       
+<script>
+  const scrollWrapper = document.getElementById("scrollWrapper");
+  let scrollAmount = 0;
+  let direction = 1; // 1 = right, -1 = left
+  const scrollSpeed = 5; // adjust speed here
+
+  // Hide scrollbar (for inline style fallback in some browsers)
+  scrollWrapper.style.scrollbarWidth = "none"; // Firefox
+  scrollWrapper.style.msOverflowStyle = "none"; // IE 10+
+
+  scrollWrapper.addEventListener("wheel", (e) => e.preventDefault(), { passive: false });
+
+  scrollWrapper.addEventListener("mouseenter", () => direction = 0);
+  scrollWrapper.addEventListener("mouseleave", () => {
+    direction = (scrollWrapper.scrollLeft <= 0) ? 1 : ((scrollWrapper.scrollLeft >= scrollWrapper.scrollWidth - scrollWrapper.clientWidth) ? -1 : 1);
+  });
+
+  function autoScroll() {
+    scrollAmount += direction * scrollSpeed;
+    scrollWrapper.scrollLeft = scrollAmount;
+
+    if (scrollWrapper.scrollLeft >= scrollWrapper.scrollWidth - scrollWrapper.clientWidth) {
+      direction = -1;
+    } else if (scrollWrapper.scrollLeft <= 0) {
+      direction = 1;
+    }
+
+    requestAnimationFrame(autoScroll);
+  }
+
+  window.addEventListener("load", () => {
+    requestAnimationFrame(autoScroll);
+  });
+</script>
+
         <script src="assets/js/jquery-3.7.1.min.js"></script>
         <!--<< Viewport Js >>-->
         <script src="assets/js/viewport.jquery.js"></script>
