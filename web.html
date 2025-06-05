@@ -11,7 +11,7 @@
         <!-- ======== Page title ============ -->
         <title>Cognetz</title>
         <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <link rel="shortcut icon" href="assets/img/logo cognetz.png">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< All Min Css >>-->
@@ -223,6 +223,12 @@
                                             </ul>
                                         </li>
                                         <li>
+                                            <a href="work.html">
+                                                Our Works
+                                            </a>
+                                           
+                                        </li>
+                                        <li>
                                             <a href="faq.html">
                                                 FAQ
 
@@ -250,7 +256,7 @@
                             </div>
                             <div class="header__hamburger d-xl-none my-auto">
                                 <div class="sidebar__toggle">
-                                    <i class="fas fa-bars"></i>
+                                    <i class="fas fa-bars" style="color: black;"></i>
                                 </div>
                             </div>
                         </div>
@@ -479,6 +485,16 @@
   }
 }
 </style>
+<style>
+#scrollWrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#scrollWrapper::-webkit-scrollbar {
+  display: none;
+}
+</style>
+
 <section id="autoScrollContainer" class="case-studies-section-4 fix section-padding" style="background: #f8f9fa; overflow: hidden;">
     <div class="container">
         <!-- Section Heading -->
@@ -489,7 +505,8 @@
 
         <!-- Scrollable Cards -->
         <div id="scrollWrapper" class="scroll-wrapper d-flex gap-4 px-2"
-           style="scroll-snap-type: x mandatory; overflow-y: hidden; overscroll-behavior-y: contain; overscroll-behavior-x: auto;">
+     style="overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+
             <div class="case-studies-card-items flex-shrink-0" style="width: 48%; scroll-snap-align: start;">
                 <div class="thumb">
                     <img src="assets/img/abba printing.png" alt="img" class="img-fluid rounded">
@@ -782,39 +799,29 @@ Area -Sharjah -United Arab Emirates</span>
         <!--<< All JS Plugins >>-->
        
 <script>
-  const scrollWrapper = document.getElementById("scrollWrapper");
-  let scrollAmount = 0;
-  let direction = 1; // 1 = right, -1 = left
-  const scrollSpeed = 5; // adjust speed here
+document.addEventListener('DOMContentLoaded', function () {
+    const container = document.getElementById('scrollWrapper');
+    let scrollStep = container.offsetWidth / 2;
+    let scrollInterval = 3000;
 
-  // Hide scrollbar (for inline style fallback in some browsers)
-  scrollWrapper.style.scrollbarWidth = "none"; // Firefox
-  scrollWrapper.style.msOverflowStyle = "none"; // IE 10+
+    function autoScroll() {
+        let maxScrollLeft = container.scrollWidth - container.clientWidth;
 
-  scrollWrapper.addEventListener("wheel", (e) => e.preventDefault(), { passive: false });
-
-  scrollWrapper.addEventListener("mouseenter", () => direction = 0);
-  scrollWrapper.addEventListener("mouseleave", () => {
-    direction = (scrollWrapper.scrollLeft <= 0) ? 1 : ((scrollWrapper.scrollLeft >= scrollWrapper.scrollWidth - scrollWrapper.clientWidth) ? -1 : 1);
-  });
-
-  function autoScroll() {
-    scrollAmount += direction * scrollSpeed;
-    scrollWrapper.scrollLeft = scrollAmount;
-
-    if (scrollWrapper.scrollLeft >= scrollWrapper.scrollWidth - scrollWrapper.clientWidth) {
-      direction = -1;
-    } else if (scrollWrapper.scrollLeft <= 0) {
-      direction = 1;
+        if (container.scrollLeft >= maxScrollLeft - 10) {
+            container.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            container.scrollBy({ left: scrollStep, behavior: 'smooth' });
+        }
     }
 
-    requestAnimationFrame(autoScroll);
-  }
+    let interval = setInterval(autoScroll, scrollInterval);
 
-  window.addEventListener("load", () => {
-    requestAnimationFrame(autoScroll);
-  });
+    // Pause auto scroll when user interacts
+    container.addEventListener('mousedown', () => clearInterval(interval));
+    container.addEventListener('touchstart', () => clearInterval(interval));
+});
 </script>
+
 
         <script src="assets/js/jquery-3.7.1.min.js"></script>
         <!--<< Viewport Js >>-->
